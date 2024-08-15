@@ -3,7 +3,3 @@ body {
   color: #fff;
 }
 
-.movie-app > .row {
-  overflow-x: auto;
-  flex-wrap: nowrap;
-}

@@ -27,48 +27,7 @@ const App = () => {
       "Type": "movie",
       "Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg"
   },
-  {
-      "Title": "Harry Potter and the Chamber of Secrets",
-      "Year": "2002",
-      "imdbID": "tt0295297",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMjE0YjUzNDUtMjc5OS00MTU3LTgxMmUtODhkOThkMzdjNWI4XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_SX300.jpg"
-  },
-  {
-      "Title": "Harry Potter and the Goblet of Fire",
-      "Year": "2005",
-      "imdbID": "tt0330373",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_SX300.jpg"
-  },
-  {
-      "Title": "Harry Potter and the Order of the Phoenix",
-      "Year": "2007",
-      "imdbID": "tt0373889",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BOTA3MmRmZDgtOWU1Ny00ZDc5LWFkN2YtNzNlY2UxZmY0N2IyXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
-  },
-  {
-      "Title": "Harry Potter and the Deathly Hallows: Part 1",
-      "Year": "2010",
-      "imdbID": "tt0926084",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg"
-  },
-  {
-      "Title": "Harry Potter and the Half-Blood Prince",
-      "Year": "2009",
-      "imdbID": "tt0417741",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg"
-  },
-  {
-      "Title": "Harry Potter 20th Anniversary: Return to Hogwarts",
-      "Year": "2022",
-      "imdbID": "tt16116174",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BZWRlMjI2YzgtOTRiOC00NTMwLTgyNDctMWY0ZGUzNzUxYmYzXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg"
-  },
+
   ]);
 
   const getMovieRequest = async () => {

@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import './index.css';
 import './App.css';
 import MovieList from './components/MovieList';
+import SearchBox from './components/SearchBox';
+import MovieHeading from './components/MovieHeading';
 
 
 const App = () => {
@@ -24,9 +26,11 @@ const App = () => {
 
 
   return (
-    <div className= "container mx-auto px-4 movie-app">
-      <div className="flex-row">
-      <div className="flex-row">
+    <div class= "container mx-auto px-4 movie-app">
+      <div class="flex-row">
+        <MovieHeading heading="Movies" />
+        <SearchBox />
+      <div class="flex-row">
         <MovieList movies={movies} />
       </div>
       </div>

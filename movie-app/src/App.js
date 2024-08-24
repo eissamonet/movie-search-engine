@@ -11,7 +11,7 @@ const App = () => {
   const [searchValue, setSearchValue] = useState('');
 
   const getMovieRequest = async () => {
-    const url = "http://www.omdbapi.com/?s=avengers&apikey=54faae10"
+    const url = "http://www.omdbapi.com/?s=marvel&apikey=54faae10"
 
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -26,15 +26,16 @@ const App = () => {
 
 
   return (
-    <div class= "container mx-auto px-4 movie-app">
-      <div class="flex-row">
-        <MovieHeading heading="Movies" />
+    <div class= 'container mx-auto movie-app'>
+      <div class='grid'>
+        <MovieHeading heading='Movies' />
         <SearchBox />
-      <div class="flex-row">
+      </div>
+      <div class='grid space-x-4'>
         <MovieList movies={movies} />
       </div>
-      </div>
     </div>
+
   );
 };
 export default App;

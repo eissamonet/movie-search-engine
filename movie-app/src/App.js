@@ -29,7 +29,7 @@ const App = () => {
     <div class= 'container mx-auto movie-app'>
       <div class='grid'>
         <MovieHeading heading='Movies' />
-        <SearchBox />
+        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
       <div class='grid space-x-4'>
         <MovieList movies={movies} />

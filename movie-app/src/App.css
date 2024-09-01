@@ -32,5 +32,30 @@ body {
   background: white;
   color: black;
   margin-top: 30px;
+}
 
+.image-container{
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay{
+  opacity: 1;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0;
+  width: 82%;
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-size: 20px;
+  padding: 20px;
 }

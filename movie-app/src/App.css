@@ -50,12 +50,14 @@ body {
 
 .overlay{
   position: absolute;
-  bottom: 0;
-  width: 82%;
-  background: rgba(0,0,0,0.8);
-  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 87%;
+  transition: 0.5s ease;
   opacity: 0;
-  transition: opacity 0.2s;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
   font-size: 20px;
-  padding: 20px;
+  bottom: 0;
 }
+

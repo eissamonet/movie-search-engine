@@ -7,8 +7,10 @@ import MovieHeading from './components/MovieHeading';
 import AddFavourites from './components/AddFavourites';
 
 
+
 const App = () => {
   const [movies, setMovies] = useState([]);
+  const [favourites, setFavourites] = useState([]);
   const [searchValue, setSearchValue] = useState('');
 
   const getMovieRequest = async (searchValue) => {
@@ -26,6 +28,11 @@ const App = () => {
     getMovieRequest(searchValue);
   }, [searchValue]);
 
+  const addFavouriteMovie = (movie) => {
+    const newFavouriteList = [...favourites, movie];
+    setFavourites(newFavouriteList);
+  };
+
 
   return (
     <div class= 'container mx-auto movie-app'>
@@ -34,7 +41,8 @@ const App = () => {
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
       <div class='grid space-x-4'>
-        <MovieList movies={movies} favouritesComponent={AddFavourites} />
+        <MovieList
+          movies={movies} handleFavouritesClick={addFavouriteMovie} favouritesComponent={AddFavourites} />
       </div>
     </div>
 

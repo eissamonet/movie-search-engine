@@ -5,6 +5,7 @@ import MovieList from './components/MovieList';
 import SearchBox from './components/SearchBox';
 import MovieHeading from './components/MovieHeading';
 import AddFavourites from './components/AddFavourites';
+import RemoveFavourites from './components/RemoveFavourites';
 
 
 
@@ -43,6 +44,13 @@ const App = () => {
       <div class='grid space-x-4'>
         <MovieList
           movies={movies} handleFavouritesClick={addFavouriteMovie} favouritesComponent={AddFavourites} />
+      </div>
+      <div class='grid'>
+        <MovieHeading heading='Favourites' />
+      </div>
+      <div class='grid space-x-4'>
+        <MovieList
+          movies={favourites} handleFavouritesClick={addFavouriteMovie} favouritesComponent={RemoveFavourites} />
       </div>
     </div>
 

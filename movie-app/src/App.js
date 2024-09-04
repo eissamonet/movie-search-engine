@@ -34,6 +34,14 @@ const App = () => {
     setFavourites(newFavouriteList);
   };
 
+  const removeFavouriteMovie = (movie) => {
+    const newFavouriteList = favourites.filter(
+      (favourite) => favourite.imdbID !== movie.imdbID
+    );
+
+    setFavourites(newFavouriteList);
+  };
+
 
   return (
     <div class= 'container mx-auto movie-app'>
@@ -50,7 +58,7 @@ const App = () => {
       </div>
       <div class='grid space-x-4'>
         <MovieList
-          movies={favourites} handleFavouritesClick={addFavouriteMovie} favouritesComponent={RemoveFavourites} />
+          movies={favourites} handleFavouritesClick={removeFavouriteMovie} favouritesComponent={RemoveFavourites} />
       </div>
     </div>
 
